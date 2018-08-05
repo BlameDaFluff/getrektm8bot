@@ -12,8 +12,6 @@ var genders = [
     "toilet paper"
 ];
 
-var rand = myArray[Math.floor(Math.random() * genders.length)];
-
 bot.on("ready", function(){
     console.log("ready");
 });
