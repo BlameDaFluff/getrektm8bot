@@ -4,6 +4,20 @@ const PREFIX = "!";
 
 var bot = new Discord.Client();
 
+var genders{
+    "attack helicpoter";
+    "web browser";
+    "F-35";
+    "wolf";
+    "chrisitan minecraft server";
+};
+
+var arrayLength = genders.length;
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+
 bot.on("ready", function(){
     console.log("ready");
 });
@@ -41,6 +55,13 @@ bot.on("message", function(message){
         case "gfcounter":
             message.channel.sendMessage("N/A");
             break;
+        case "currentgender":
+            var gender = "";
+            for (var i = 0; i < arrayLength; i++) {
+                 gender = genders[getRandomInt(6)];
+            }
+            message.channel.sendMessage(message.author + "is currently " + gender);
+            break;
         case "commands":
             var embed = new Discord.RichEmbed()
                 .setTitle("MY COMMANDS:")
@@ -51,6 +72,7 @@ bot.on("message", function(message){
                 .addField("!lukecampbell", "spawns salty boi")
                 .addField("!jesuschrist", "brings holy boi back from the ded")
                 .addField("!gfcounter", "checks if aren't gay")
+                .addField("!currentgender", "tells the gender to pissed off bois")
                 .setColor(0xFDFEFE)
             message.channel.sendEmbed(embed);
             break;
