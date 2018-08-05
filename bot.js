@@ -56,13 +56,13 @@ bot.on("message", function(message){
         case "commands":
             var embed = new Discord.RichEmbed()
                 .setTitle("MY COMMANDS:")
-                .addField("!poon", "spawns horny girls")
+                .addField("!poon", "spawns horny girls", true)
                 .addField("!ld", "spawns confused gurl")
-                .addField("!penis", "gives the good zucc")
+                .addField("!penis", "gives the good zucc", true)
                 .addField("!dan", "where tf is this kid anyway?")
-                .addField("!lukecampbell", "spawns salty boi")
+                .addField("!lukecampbell", "spawns salty boi", true)
                 .addField("!jesuschrist", "brings holy boi back from the ded")
-                .addField("!gfcounter", "checks if aren't gay")
+                .addField("!gfcounter", "checks if aren't gay", true)
                 .addField("!currentgender", "tells the gender to pissed off bois")
                 .setColor(0xFDFEFE)
             message.channel.sendEmbed(embed);
