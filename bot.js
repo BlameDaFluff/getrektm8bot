@@ -4,9 +4,17 @@ const PREFIX = "!";
 
 var bot = new Discord.Client();
 
-function getRandomInt(max) {
-  return Math.floor(Math.random() * Math.floor(max));
+var genders = {
+    "wolf";
+    "attack helicopter";
+    "christian minecraft server";
+    "frog";
+    "toilet paper";
 }
+
+var gender = "";
+
+var rand = myArray[Math.floor(Math.random() * genders.length)];
 
 bot.on("ready", function(){
     console.log("ready");
@@ -46,19 +54,10 @@ bot.on("message", function(message){
             message.channel.sendMessage("N/A");
             break;
         case "currentgender":
-            var gender = "";
-            var genders{
-                "attack helicpoter";
-                "web browser";
-                "F-35";
-                "wolf";
-                "chrisitan minecraft server";
-            };
-            var arrayLength = genders.length;
-            for (var i = 0; i < arrayLength; i++) {
-                 gender = genders[getRandomInt(6)];
+            for(int i = 0; i < genders.length; i++){
+                gender = genders[rand];
             }
-            message.channel.sendMessage(message.author + "is currently " + gender);
+            message.channel.sendMessage(message.author + "is currently identifying as " + gender);
             break;
         case "commands":
             var embed = new Discord.RichEmbed()
