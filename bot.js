@@ -5,10 +5,10 @@ const PREFIX = "!";
 var bot = new Discord.Client();
 
 var genders = [
-    "wolf",
-    "attack helicopter",
-    "christian minecraft server",
-    "frog",
+    "a wolf",
+    "an attack helicopter",
+    "a christian minecraft server",
+    "a frog",
     "toilet paper"
 ];
 
