@@ -28,7 +28,10 @@ bot.on("message", function(message){
                 .setTitle("*slurp noise*")
                 .setColor(0xFDFEFE)
             message.channel.sendEmbed(embed);
-        break;
+            break;
+        case "dan":
+            message.channel.sendMessage("Sorry, " + message.author + ", but Dan is currently busy getting some poon");
+            break;
         default:
             message.channel.sendMessage("invalid command");
     }
