@@ -38,6 +38,9 @@ bot.on("message", function(message){
         case "jesuschrist":
             message.channel.sendMessage("it's jesus christ");
             break;
+        case "gfcounter":
+            message.channel.sendMessage("N/A");
+            break;
         case "commands":
             var embed = new Discord.RichEmbed()
                 .setTitle("MY COMMANDS:")
@@ -47,6 +50,7 @@ bot.on("message", function(message){
                 .addField("!dan", "where tf is this kid anyway?")
                 .addField("!lukecampbell", "spawns salty boi")
                 .addField("!jesuschrist", "brings holy boi back from the ded")
+                .addField("!gfcounter", "checks if aren't gay")
                 .setColor(0xFDFEFE)
             message.channel.sendEmbed(embed);
             break;
