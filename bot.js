@@ -35,6 +35,9 @@ bot.on("message", function(message){
         case "lukecampbell":
             message.channel.sendMessage(message.author + ", don't call me that boi! *or imma have to clap them cheeks*");
             break;
+        case "jesuschrist":
+            message.channel.sendMessage("it's jesus christ");
+            break;
         case "commands":
             var embed = new Discord.RichEmbed()
                 .setTitle("MY COMMANDS:")
@@ -43,6 +46,7 @@ bot.on("message", function(message){
                 .addField("!penis", "gives the good zucc")
                 .addField("!dan", "where tf is this kid anyway?")
                 .addField("!lukecampbell", "spawns salty boi")
+                .addField("!jesuschrist", "brings boi back from the ded")
                 .setColor(0xFDFEFE)
             message.channel.sendEmbed(embed);
             break;
