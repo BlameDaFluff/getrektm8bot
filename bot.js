@@ -4,16 +4,6 @@ const PREFIX = "!";
 
 var bot = new Discord.Client();
 
-var genders{
-    "attack helicpoter";
-    "web browser";
-    "F-35";
-    "wolf";
-    "chrisitan minecraft server";
-};
-
-var arrayLength = genders.length;
-
 function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
 }
@@ -57,6 +47,14 @@ bot.on("message", function(message){
             break;
         case "currentgender":
             var gender = "";
+            var genders{
+                "attack helicpoter";
+                "web browser";
+                "F-35";
+                "wolf";
+                "chrisitan minecraft server";
+            };
+            var arrayLength = genders.length;
             for (var i = 0; i < arrayLength; i++) {
                  gender = genders[getRandomInt(6)];
             }
