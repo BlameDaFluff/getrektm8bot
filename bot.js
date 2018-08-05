@@ -46,7 +46,7 @@ bot.on("message", function(message){
                 .addField("!penis", "gives the good zucc")
                 .addField("!dan", "where tf is this kid anyway?")
                 .addField("!lukecampbell", "spawns salty boi")
-                .addField("!jesuschrist", "brings boi back from the ded")
+                .addField("!jesuschrist", "brings holy boi back from the ded")
                 .setColor(0xFDFEFE)
             message.channel.sendEmbed(embed);
             break;
