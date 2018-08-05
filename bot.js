@@ -32,6 +32,9 @@ bot.on("message", function(message){
         case "dan":
             message.channel.sendMessage("Sorry, " + message.author + ", but Dan is currently busy getting some poon");
             break;
+        case "lukecampbell":
+            message.channel.sendMessage(message.author + ", don't call me that boi! *or imma have to clap them cheeks*");
+            break;
         default:
             message.channel.sendMessage("invalid command");
     }
