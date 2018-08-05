@@ -4,6 +4,18 @@ const PREFIX = "!";
 
 var bot = new Discord.Client();
 
+var genders = [
+    "wolf",
+    "attack helicopter",
+    "christian minecraft server",
+    "frog",
+    "toilet paper"
+];
+
+var gender = "";
+
+var rand = myArray[Math.floor(Math.random() * genders.length)];
+
 bot.on("ready", function(){
     console.log("ready");
 });
@@ -40,6 +52,12 @@ bot.on("message", function(message){
             break;
         case "gfcounter":
             message.channel.sendMessage("N/A");
+            break;
+         case "currentgender":
+            for(var i = 0; i < genders.length; i++){
+                gender = genders[rand];
+            }
+            message.channel.sendMessage(message.author + "is currently identifying as " + gender);
             break;
         case "commands":
             var embed = new Discord.RichEmbed()
