@@ -51,7 +51,7 @@ bot.on("message", function(message){
             break;
          case "currentgender":
                 var rand = genders[Math.floor(Math.random() * genders.length)];
-                message.channel.sendMessage(message.author + "is currently identifying as " + rand);
+                message.channel.sendMessage(message.author + " is currently identifying as " + rand);
             break;
         case "commands":
             var embed = new Discord.RichEmbed()
