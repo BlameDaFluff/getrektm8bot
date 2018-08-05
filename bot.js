@@ -3,6 +3,7 @@ const Discord = require("discord.js");
 const PREFIX = "!";
 
 var bot = new Discord.Client();
+
 var genders = [
     "wolf",
     "attack helicopter",
@@ -10,8 +11,6 @@ var genders = [
     "frog",
     "toilet paper"
 ];
-
-var gender = "";
 
 var rand = myArray[Math.floor(Math.random() * genders.length)];
 
@@ -53,8 +52,8 @@ bot.on("message", function(message){
             message.channel.sendMessage("N/A");
             break;
          case "currentgender":
-                gender = genders[rand];
-                message.channel.sendMessage(message.author + "is currently identifying as " + gender);
+                var rand = genders[Math.floor(Math.random() * genders.length)];
+                message.channel.sendMessage(message.author + "is currently identifying as " + rand);
             break;
         case "commands":
             var embed = new Discord.RichEmbed()
