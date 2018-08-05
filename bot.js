@@ -35,6 +35,17 @@ bot.on("message", function(message){
         case "lukecampbell":
             message.channel.sendMessage(message.author + ", don't call me that boi! *or imma have to clap them cheeks*");
             break;
+        case "commands":
+            var embed = new Discord.RichEmbed()
+                .setTitle("MY COMMANDS:")
+                .addField("!poon", "spawns horny girls")
+                .addField("!ld", "spawns confused gurl")
+                .addField("!penis", "gives the good zucc")
+                .addField("!dan", "where tf is this kid anyway?")
+                .addField("!lukecampbell", "spawns salty boi")
+                .setColor(0xFDFEFE)
+            message.channel.sendEmbed(embed);
+            break;
         default:
             message.channel.sendMessage("invalid command");
     }
