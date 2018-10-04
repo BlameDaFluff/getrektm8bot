@@ -53,6 +53,9 @@ bot.on("message", function(message){
                 var rand = genders[Math.floor(Math.random() * genders.length)];
                 message.channel.sendMessage(message.author + " is currently identifying as " + rand);
             break;
+        case "brother":
+               message.channel.sendMessage("pass the lint *brother*");
+                break;
         case "commands":
             var embed = new Discord.RichEmbed()
                 .setTitle("MY COMMANDS:")
@@ -64,6 +67,7 @@ bot.on("message", function(message){
                 .addField("!jesuschrist", "brings holy boi back from the ded")
                 .addField("!gfcounter", "checks if aren't gay")
                 .addField("!currentgender", "tells the gender to pissed off bois")
+                .addField("!brother", "passes something...")
                 .setColor(0xFDFEFE)
             message.channel.sendEmbed(embed);
             break;
