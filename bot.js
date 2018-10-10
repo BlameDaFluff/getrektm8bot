@@ -58,7 +58,7 @@ bot.on("message", function(message){
                 break;
         case "lamp":
                 var embedLamp = new Discord.RichEmbed()
-                    .setTitle("**BrÖther, pass the Lamp**")
+                    .setTitle("**Bröther**")
                     .setColor(0xF9E79F)
                     .setImage("https://imgix.bustle.com/uploads/image/2018/9/27/b2655359-f3c4-436e-b7dc-7ceb3d528dfd-dj92z5rvsaa7uku.jpg?w=970&h=582&fit=crop&crop=faces&auto=format&q=70")
                 message.channel.sendEmbed(embedLamp);
