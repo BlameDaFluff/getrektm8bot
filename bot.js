@@ -12,8 +12,6 @@ var genders = [
     "toilet paper"
 ];
 
-var nameM = "Moth 1";
-
 bot.on("ready", function(){
     console.log("ready");
 });
@@ -60,10 +58,8 @@ bot.on("message", function(message){
                 break;
         case "lamp":
                 var i;
-                for (i = 0; i < 10; i++) { 
-                    setTimeout(function(){ 
-                        message.channel.sendMessage("Moth " + i + ": Lamp");
-                    }, 100);
+                for (i = 1; i < 11; i++) { 
+                    message.channel.sendMessage("Moth " + i + ": Lamp");
                 }
                break;
         case "commands":
