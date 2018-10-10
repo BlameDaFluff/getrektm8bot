@@ -70,6 +70,13 @@ bot.on("message", function(message){
                     .setURL("https://www.reddit.com/r/psatmemes/")
                 message.channel.sendEmbed(embedPsat);
               break;
+        case "jesusthesavior":
+            var embedPsat = new Discord.RichEmbed()
+                    .setColor(0xF9E79F)
+                    .setTitle("**Fucc y'all, praise lord Tachanka b*tch**") 
+                    .setImage("https://steamuserimages-a.akamaihd.net/ugc/96104530591710903/DBEBF68BDF6C059308008518A0A08C36319C9FF4/?interpolation=lanczos-none&output-format=jpeg&output-quality=95&fit=inside%7C512%3A288&composite-to=*,*%7C512%3A288&background-color=black")
+                message.channel.sendEmbed(embedPsat);
+            break;
         case "commands":
             var embed = new Discord.RichEmbed()
                 .setTitle("MY COMMANDS:")
@@ -84,6 +91,7 @@ bot.on("message", function(message){
                 .addField("!brother", "passes something...")
                 .addField("!lamp", "turns on the lights")
                 .addField("!psat", "1 million = 1,000,000")
+                .addField("!jesusthesavior", "fucc y'all catholic nibbas")
                 .setColor(0xFDFEFE)
             message.channel.sendEmbed(embed);
             break;
