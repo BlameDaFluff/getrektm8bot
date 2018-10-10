@@ -12,6 +12,8 @@ var genders = [
     "toilet paper"
 ];
 
+var nameM = "Moth 1";
+
 bot.on("ready", function(){
     console.log("ready");
 });
@@ -56,6 +58,9 @@ bot.on("message", function(message){
         case "brother":
                message.channel.sendMessage("pass the lint *brother*");
                 break;
+        case "lamp":
+               message.channel.sendMessage("Moth [0]: Lamp", nameM);
+               break;
         case "commands":
             var embed = new Discord.RichEmbed()
                 .setTitle("MY COMMANDS:")
