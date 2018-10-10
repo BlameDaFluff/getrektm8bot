@@ -67,8 +67,9 @@ bot.on("message", function(message){
              var embedPsat = new Discord.RichEmbed()
                     .setColor(0xE74C3C)
                     .setThumbnail("http://i.imgur.com/sdO8tAw.png")
-                    .addField("reddit.com/r/psatmemes/", "click here")
+                    .setTitle("reddit.com/r/psatmemes/")
                     .setURL("https://www.reddit.com/r/psatmemes/")
+                    .setFooter("__click the link to die laughing__")
                 message.channel.sendEmbed(embedPsat);
               break;
         case "commands":
