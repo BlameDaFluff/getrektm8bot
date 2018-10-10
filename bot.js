@@ -74,7 +74,7 @@ bot.on("message", function(message){
             var embedPsat = new Discord.RichEmbed()
                     .setColor(0xF9E79F)
                     .setTitle("**Fucc y'all, praise lord Tachanka b*tch**") 
-                    .setImage("https://steamuserimages-a.akamaihd.net/ugc/96104530591710903/DBEBF68BDF6C059308008518A0A08C36319C9FF4/?interpolation=lanczos-none&output-format=jpeg&output-quality=95&fit=inside%7C512%3A288&composite-to=*,*%7C512%3A288&background-color=black")
+                    .setImage("https://imageproxy.ifcdn.com/crop:x-20,resize:320x,crop:x800,quality:90x75/images/c3b049dd5b3e47474f49aa81fbc7617f52d34d17b97556362159f5e4d6dcee84_1.jpg")
                 message.channel.sendEmbed(embedPsat);
             break;
         case "commands":
