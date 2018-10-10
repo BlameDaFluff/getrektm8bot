@@ -59,7 +59,10 @@ bot.on("message", function(message){
                message.channel.sendMessage("pass the lint *brother*");
                 break;
         case "lamp":
-               message.channel.sendMessage("Moth [0]: Lamp", nameM);
+                var i;
+                for (i = 0; i < 10; i++) { 
+                    message.channel.sendMessage("Moth " + i + ": Lamp");
+                }
                break;
         case "commands":
             var embed = new Discord.RichEmbed()
@@ -73,6 +76,7 @@ bot.on("message", function(message){
                 .addField("!gfcounter", "checks if aren't gay")
                 .addField("!currentgender", "tells the gender to pissed off bois")
                 .addField("!brother", "passes something...")
+                .addField("!lamp", "turns on the lights")
                 .setColor(0xFDFEFE)
             message.channel.sendEmbed(embed);
             break;
