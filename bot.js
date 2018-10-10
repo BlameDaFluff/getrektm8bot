@@ -65,10 +65,9 @@ bot.on("message", function(message){
                 break;
         case "psat":
              var embedPsat = new Discord.RichEmbed()
-                    .setTitle("*You better check these out:*")
                     .setColor(0xE74C3C)
                     .setThumbnail("http://i.imgur.com/sdO8tAw.png")
-                    .addField("Click Here!")
+                    .addField("reddit.com/r/psatmemes/", "click here")
                     .setURL("https://www.reddit.com/r/psatmemes/")
                 message.channel.sendEmbed(embedPsat);
               break;
