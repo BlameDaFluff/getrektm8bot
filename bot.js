@@ -68,7 +68,8 @@ bot.on("message", function(message){
                     .setTitle("*You better check these out:*")
                     .setColor(0xE74C3C)
                     .setThumbnail("http://i.imgur.com/sdO8tAw.png")
-                    .url:("https://www.reddit.com/r/psatmemes/")
+                    .addField("Click Here!")
+                    .setURL:("https://www.reddit.com/r/psatmemes/")
                 message.channel.sendEmbed(embedPsat);
               break;
         case "commands":
