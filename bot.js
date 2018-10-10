@@ -61,10 +61,7 @@ bot.on("message", function(message){
                     .setTitle("**BrÖther, pass the Lamp**")
                     .setColor(0xF9E79F)
                     .setImage("https://imgix.bustle.com/uploads/image/2018/9/27/b2655359-f3c4-436e-b7dc-7ceb3d528dfd-dj92z5rvsaa7uku.jpg?w=970&h=582&fit=crop&crop=faces&auto=format&q=70")
-                var i;
-                     for (i = 1; i < 6; i++) { 
-                         message.channel.sendEmbed(embedLamp);
-                     }
+                message.channel.sendEmbed(embedLamp);
                 break;
         case "commands":
             var embed = new Discord.RichEmbed()
