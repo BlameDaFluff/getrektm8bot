@@ -68,7 +68,6 @@ bot.on("message", function(message){
                     .setColor(0xE74C3C)
                     .setTitle("https://www.reddit.com/r/psatmemes/")
                     .setURL("https://www.reddit.com/r/psatmemes/")
-                    .setFooter("*click the link to die laughing*")
                 message.channel.sendEmbed(embedPsat);
               break;
         case "commands":
