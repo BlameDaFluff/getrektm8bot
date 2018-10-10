@@ -63,6 +63,14 @@ bot.on("message", function(message){
                     .setImage("https://imgix.bustle.com/uploads/image/2018/9/27/b2655359-f3c4-436e-b7dc-7ceb3d528dfd-dj92z5rvsaa7uku.jpg?w=970&h=582&fit=crop&crop=faces&auto=format&q=70")
                 message.channel.sendEmbed(embedLamp);
                 break;
+        case "psat":
+             var embedPsat = new Discord.RichEmbed()
+                    .setTitle("*You better check these out:*")
+                    .setColor(0xE74C3C)
+                    .setThumbnail("http://i.imgur.com/sdO8tAw.png")
+                    .url:("https://www.reddit.com/r/psatmemes/")
+                message.channel.sendEmbed(embedPsat);
+              break;
         case "commands":
             var embed = new Discord.RichEmbed()
                 .setTitle("MY COMMANDS:")
@@ -76,6 +84,7 @@ bot.on("message", function(message){
                 .addField("!currentgender", "tells the gender to pissed off bois")
                 .addField("!brother", "passes something...")
                 .addField("!lamp", "turns on the lights")
+                .addField("!psat", "1 million = 1,000,000")
                 .setColor(0xFDFEFE)
             message.channel.sendEmbed(embed);
             break;
