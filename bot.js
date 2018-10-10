@@ -58,11 +58,9 @@ bot.on("message", function(message){
                 break;
         case "lamp":
                 var i;
-                setInterval(function() {
-                        for (i = 0; i < 6; i++) { 
-                            message.channel.sendMessage("Moth " + i + ": Lamp");
-                        }
-                }, 5000);
+                    for (i = 1; i < 6; i++) { 
+                         message.channel.sendMessage("Moth " + i + ": Lamp");
+                    }
                 break;
         case "commands":
             var embed = new Discord.RichEmbed()
