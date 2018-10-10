@@ -61,7 +61,9 @@ bot.on("message", function(message){
         case "lamp":
                 var i;
                 for (i = 0; i < 10; i++) { 
-                    message.channel.sendMessage("Moth " + i + ": Lamp");
+                    setTimeout(function(){ 
+                        message.channel.sendMessage("Moth " + i + ": Lamp");
+                    }, 100);
                 }
                break;
         case "commands":
