@@ -77,6 +77,13 @@ bot.on("message", function(message){
                     .setImage("https://imageproxy.ifcdn.com/crop:x-20,resize:320x,crop:x800,quality:90x75/images/c3b049dd5b3e47474f49aa81fbc7617f52d34d17b97556362159f5e4d6dcee84_1.jpg")
                 message.channel.sendEmbed(embedPsat);
             break;
+        case "cheese":
+                var embedCheese = new Discord.RichEmbed()
+                    .setColor(0xF4D03F)
+                    .setTitle("**Did someone say CHEESE?!**") 
+                    .setImage("https://onmilwaukee.com/images/articles/ch/cheeseheads10things/cheeseheads10things_fullsize_story1.jpg?20151125091549")
+                message.channel.sendEmbed(embedCheese);
+            break;
         case "commands":
             var embed = new Discord.RichEmbed()
                 .setTitle("MY COMMANDS:")
@@ -92,6 +99,7 @@ bot.on("message", function(message){
                 .addField("!lamp", "turns on the lights")
                 .addField("!psat", "1 million = 1,000,000")
                 .addField("!jesusthesavior", "fucc y'all catholic nibbas")
+                .addField("!cheese", "summons wissconsin bois")
                 .setColor(0xFDFEFE)
             message.channel.sendEmbed(embed);
             break;
