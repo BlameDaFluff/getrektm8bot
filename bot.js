@@ -84,6 +84,9 @@ bot.on("message", function(message){
                     .setImage("https://onmilwaukee.com/images/articles/ch/cheeseheads10things/cheeseheads10things_fullsize_story1.jpg?20151125091549")
                 message.channel.sendEmbed(embedCheese);
             break;
+        case "brey":
+                message.channel.sendMessage("Sorry " + message.author + " Brey is currently busy playing xbox and dipping u on snapchat.")
+            break;
         case "commands":
             var embed = new Discord.RichEmbed()
                 .setTitle("MY COMMANDS:")
