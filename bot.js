@@ -100,6 +100,7 @@ bot.on("message", function(message){
                 .addField("!psat", "1 million = 1,000,000")
                 .addField("!jesusthesavior", "fucc y'all catholic nibbas")
                 .addField("!cheese", "summons wissconsin bois")
+                .addField("!brey", "i dont fuckin know")
                 .setColor(0xFDFEFE)
             message.channel.sendEmbed(embed);
             break;
