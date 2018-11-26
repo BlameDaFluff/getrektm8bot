@@ -13,12 +13,31 @@ var genders = [
 ];
 
 var outcomes = [
-    "yes",
-    "no",
-    "defintiley not",
-    "are you kidding me?",
-    "hell yeah",
-    "absolutely"
+    "Yes.",
+    "No.",
+    "Defintiley not.",
+    "Are you kidding me?",
+    "Hell yeah!",
+    "Absolutely!",
+    "It is certain.",
+    "It is decidedly so.",
+    "Without a doubt.",
+    "Yes - definitely.",
+    "You may rely on it.",
+    "As I see it, Yes.",
+    "Most likely.",
+    "Outlook good.",
+    "Signs point to yes.",
+    "Reply hazy, try again.",
+    "Ask again later.",
+    "Better not tell you now.",
+    "Cannot predict now.",
+    "Concentrate and ask again.",
+    "Don't count on it.",
+    "My reply is no.",
+    "My sources say no.",
+    "Outlook not so good.",
+    "Very doubtful."
 ];
 
 bot.on("ready", function(){
@@ -103,8 +122,8 @@ bot.on("message", function(message){
                      userIn = userIn + " " + args[i];
                 }
                 var rand = outcomes[Math.floor(Math.random() * outcomes.length)];
-                message.channel.sendMessage(message.author + " asked magic 8-ball " + userIn);
-                message.channel.sendMessage("Magic 8-ball says: " + rand);
+                message.channel.sendMessage(message.author + " **asked magic 8-ball:** " + userIn);
+                message.channel.sendMessage("**Magic 8-ball says:** " + rand);
             break;
         case "commands":
             var embed = new Discord.RichEmbed()
