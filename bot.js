@@ -12,6 +12,15 @@ var genders = [
     "toilet paper"
 ];
 
+var outcomes = [
+    "yes",
+    "no",
+    "defintiley not",
+    "are you kidding me?",
+    "hell yeah",
+    "absolutely"
+];
+
 bot.on("ready", function(){
     console.log("ready");
 });
@@ -23,13 +32,6 @@ bot.on("message", function(message){
     if(!message.content.startsWith(PREFIX)) return;
     
     var args = message.content.substring(PREFIX.length).split(" ");
-    
-    if (message.content === "$loop") { 
-      var interval = setInterval (function () {
-        message.channel.send("Hi")
-        .catch(console.error);
-      }, 1 * 1000); 
-    }
 
     switch(args[0].toLocaleLowerCase()){
         case "poon":
@@ -94,6 +96,12 @@ bot.on("message", function(message){
         case "brey":
                 message.channel.sendMessage("Sorry " + message.author + " Brey is currently busy playing xbox and dipping u on snapchat.")
             break;
+        case "8ball":
+                var userIn = args[1];
+                var rand = outcomes[Math.floor(Math.random() * outcomes.length)];
+                message.channel.sendMessage(message.author + " asked magic 8-ball " + userIn);
+                message.channel.sendMessage("Magic 8-ball says: " + rand);
+            break;
         case "commands":
             var embed = new Discord.RichEmbed()
                 .setTitle("MY COMMANDS:")
@@ -111,6 +119,7 @@ bot.on("message", function(message){
                 .addField("!jesusthesavior", "fucc y'all catholic nibbas")
                 .addField("!cheese", "summons wissconsin bois")
                 .addField("!brey", "i dont fuckin know")
+                .addField("!8ball (whatever your question is goes here), asks questions to the Gods")
                 .setColor(0xFDFEFE)
             message.channel.sendEmbed(embed);
             break;
