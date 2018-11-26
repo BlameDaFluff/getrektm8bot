@@ -23,6 +23,13 @@ bot.on("message", function(message){
     if(!message.content.startsWith(PREFIX)) return;
     
     var args = message.content.substring(PREFIX.length).split(" ");
+    
+    if (message.content === "$loop") { 
+      var interval = setInterval (function () {
+        message.channel.send("Hi")
+        .catch(console.error);
+      }, 1 * 1000); 
+    }
 
     switch(args[0].toLocaleLowerCase()){
         case "poon":
