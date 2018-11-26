@@ -32,6 +32,7 @@ bot.on("message", function(message){
     if(!message.content.startsWith(PREFIX)) return;
     
     var args = message.content.substring(PREFIX.length).split(" ");
+    
 
     switch(args[0].toLocaleLowerCase()){
         case "poon":
@@ -97,7 +98,10 @@ bot.on("message", function(message){
                 message.channel.sendMessage("Sorry " + message.author + " Brey is currently busy playing xbox and dipping u on snapchat.")
             break;
         case "8ball":
-                var userIn = args[1];
+                var userIn;
+                for (var i=1; i < args.length; i++) {
+                     userIn = args[i];
+                }
                 var rand = outcomes[Math.floor(Math.random() * outcomes.length)];
                 message.channel.sendMessage(message.author + " asked magic 8-ball " + userIn);
                 message.channel.sendMessage("Magic 8-ball says: " + rand);
