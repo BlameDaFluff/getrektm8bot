@@ -98,9 +98,9 @@ bot.on("message", function(message){
                 message.channel.sendMessage("Sorry " + message.author + " Brey is currently busy playing xbox and dipping u on snapchat.")
             break;
         case "8ball":
-                var userIn;
+                var userIn = "";
                 for (var i=1; i < args.length; i++) {
-                     userIn = args[i];
+                     userIn = userIn + args[i];
                 }
                 var rand = outcomes[Math.floor(Math.random() * outcomes.length)];
                 message.channel.sendMessage(message.author + " asked magic 8-ball " + userIn);
